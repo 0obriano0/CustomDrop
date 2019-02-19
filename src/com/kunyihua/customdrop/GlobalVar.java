@@ -64,9 +64,9 @@ public class GlobalVar
 		else if (entityId.equals("CHICKEN")) { return "Âû"; }
 		else if (entityId.equals("SQUID")) { return "³¹³½"; }
 		else if (entityId.equals("WOLF")) { return "¯T"; }
-		else if (entityId.equals("MUSHROOMCOW")) { return "Ä¨Û£¤û"; }
+		else if (entityId.equals("MOOSHROOM")) { return "Ä¨Û£¤û"; }
 		else if (entityId.equals("SNOWMAN")) { return "³·¤H"; }
-		else if (entityId.equals("OZELOT")) { return "¿ß"; }
+		else if (entityId.equals("OCELOT")) { return "¿ß"; }
 		else if (entityId.equals("VILLAGERGOLEM")) { return "ÅK¤H"; }
 		else if (entityId.equals("HORSE")) { return "°¨"; }
 		else if (entityId.equals("VILLAGER")) { return "§ø¥Á"; }
@@ -80,6 +80,24 @@ public class GlobalVar
 		else if (entityId.equals("GUARDIAN")) { return "²`®ü¦u½Ã"; }
 		else if (entityId.equals("HUSK")) { return "«Í´ß"; }
 		else if (entityId.equals("LLAMA")) { return "¦Ï¾m"; }
+		else if (entityId.equals("MULE")) { return "Å["; }
+		else if (entityId.equals("PARROT")) { return "ÆxÄM"; }
+		else if (entityId.equals("PHANTOM")) { return "©]¾y"; }
+		else if (entityId.equals("POLAR_BEAR")) { return "¥_·¥ºµ"; }
+		else if (entityId.equals("PUFFERFISH")) { return "ªe³b"; }
+		else if (entityId.equals("RABBIT")) { return "¨ß¤l"; }
+		else if (entityId.equals("SALMON")) { return "ÂD³½"; }
+		else if (entityId.equals("SHULKER")) { return "¬É¥ñ°F"; }
+		else if (entityId.equals("PUFFERFISH")) { return "ªe³b"; }
+		else if (entityId.equals("SKELETON_HORSE")) { return "¾uÅ\°¨"; }
+		else if (entityId.equals("STRAY")) { return "¬y®ö¾uÅ\"; }
+		else if (entityId.equals("TROPICAL_FISH")) { return "¼ö±a³½"; }
+		else if (entityId.equals("TURTLE")) { return "®üÀt"; }
+		else if (entityId.equals("VEX")) { return "°­"; }
+		else if (entityId.equals("VINDICATOR")) { return "½Ã¹D¤h"; }
+		else if (entityId.equals("WITHER_SKELETON")) { return "­ä¹s¾uÅ\"; }
+		else if (entityId.equals("ZOMBIE_HORSE")) { return "íL«Í°¨"; }
+		else if (entityId.equals("ZOMBIE_VILLAGER")) { return "íL«Í§ø¥Á"; }
 		return entityId;
 	}
 }
