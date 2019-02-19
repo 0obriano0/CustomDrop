@@ -32,6 +32,7 @@ public class EntityDeathEvents implements Listener
     		Player killBy = entityDeth.getKiller();
     		String sEntitlyName = "";
     		sEntitlyName = entityDeth.getType().getName().toUpperCase();
+    		killBy.sendMessage("殺死了" + GlobalVar.GetEntityName(sEntitlyName));
     		// 判斷是否有掉落物清單
     		if (GlobalVar.CustomItemMap.containsKey(sEntitlyName))
     		{
@@ -51,6 +52,7 @@ public class EntityDeathEvents implements Listener
         				if (iChance <= (customItem.Chance * 100))
         				{
         					// 判定掉落
+        					System.out.print("判定掉落");
         					entityDeth.getWorld().dropItemNaturally(entityDeth.getLocation(), customItem.getResultItem());
         					// 顯示掉落訊息
         					killBy.sendMessage(GlobalVar.GetEntityName(sEntitlyName) + "§6掉落了§f" + customItem.ItemName);

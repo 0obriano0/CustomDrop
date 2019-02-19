@@ -56,6 +56,8 @@ public class LoadConfig
 			List<String> ItemLores = new ArrayList<String>();
 			// 掉落的物品ID(原始ID)
 			int ItemID = 0;
+			// 掉落的物品名稱(原始名稱)
+			String ItemRealname = "";
 			// 色彩
 			byte Red = 0;
 			byte Green = 0;
@@ -95,6 +97,8 @@ public class LoadConfig
 					ItemLores = new ArrayList<String>();
 					// 掉落的物品ID(原始ID)
 					ItemID = 0;
+					// 掉落的物品名稱(原始名稱)
+					ItemRealname = "";
 					// 色彩
 					Red = 0;
 					Green = 0;
@@ -129,6 +133,10 @@ public class LoadConfig
 						{
 							ItemLores.set(i, ItemLores.get(i).replace("_", " "));
 						}
+					}
+					if (data.contains("CustomDrop." + entity_name + "." + name + ".ItemRealname"))
+					{
+						ItemRealname = this.data.getString("CustomDrop." + entity_name + "." + name + ".ItemRealname").toUpperCase();
 					}
 					// 物品ID
 					if (data.contains("CustomDrop." + entity_name + "." + name + ".ItemID"))
@@ -177,7 +185,7 @@ public class LoadConfig
 					if (ItemID > 0)
 					{
 						// 加入
-						dropItems.add(new CustomItem(ItemName, UseOriginalName, ItemLores, ItemID, Red, Green, Blue, ItemSubID, Enchants, Quantity, Chance, OnlyWorld));
+						dropItems.add(new CustomItem(ItemName, UseOriginalName, ItemLores, ItemID, ItemRealname, Red, Green, Blue, ItemSubID, Enchants, Quantity, Chance, OnlyWorld));
 					}
 					else
 					{
@@ -263,6 +271,9 @@ public class LoadConfig
 			out.write("#掉落的物品原始ID(例：木劍=268)#\r\n");
 			out.write("#==============================#\r\n");
 			out.write("      ItemID: 268\r\n");
+			out.write("#掉落的物品原始名稱(例：木劍=WOODEN_SWORD)#\r\n");
+			out.write("#==============================#\r\n");
+			out.write("      ItemRealname: WOODEN_SWORD\r\n");
 			out.write("#==============#\r\n");
 			out.write("#掉落的物品說明#\r\n");
 			out.write("#==============#\r\n");
@@ -316,6 +327,7 @@ public class LoadConfig
 			out.write("  PIGZOMBIE:\r\n");
 			out.write("    §f集字卡-「殭」§f:\r\n");
 			out.write("      ItemID: 339\r\n");
+			out.write("      ItemRealname: PAPER\r\n");
 			out.write("      ItemLores:\r\n");
 			out.write("      - §e集滿「殭」「屍」「豬」「人」§f\r\n");
 			out.write("      - §e即可合成殭屍豬人的飲料§f\r\n");
@@ -323,6 +335,7 @@ public class LoadConfig
 			out.write("      Chance: 25\r\n");
 			out.write("    §f集字卡-「屍」§f:\r\n");
 			out.write("      ItemID: 339\r\n");
+			out.write("      ItemRealname: PAPER\r\n");
 			out.write("      ItemLores:\r\n");
 			out.write("      - §e集滿「殭」「屍」「豬」「人」§f\r\n");
 			out.write("      - §e即可合成殭屍豬人的飲料§f\r\n");
@@ -330,6 +343,7 @@ public class LoadConfig
 			out.write("      Chance: 25\r\n");
 			out.write("    §f集字卡-「豬」§f:\r\n");
 			out.write("      ItemID: 339\r\n");
+			out.write("      ItemRealname: PAPER\r\n");
 			out.write("      ItemLores:\r\n");
 			out.write("      - §e集滿「殭」「屍」「豬」「人」§f\r\n");
 			out.write("      - §e即可合成殭屍豬人的飲料§f\r\n");
@@ -337,6 +351,7 @@ public class LoadConfig
 			out.write("      Chance: 25\r\n");
 			out.write("    §f集字卡-「人」§f:\r\n");
 			out.write("      ItemID: 339\r\n");
+			out.write("      ItemRealname: PAPER\r\n");
 			out.write("      ItemLores:\r\n");
 			out.write("      - §e集滿「殭」「屍」「豬」「人」§f\r\n");
 			out.write("      - §e即可合成殭屍豬人的飲料§f\r\n");

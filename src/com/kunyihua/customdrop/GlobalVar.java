@@ -48,9 +48,9 @@ public class GlobalVar
 		else if (entityId.equals("ZOMBIE")) { return "íL«Í"; }
 		else if (entityId.equals("SLIME")) { return "¥vµÜ©i"; }
 		else if (entityId.equals("GHAST")) { return "«ÕÆF¤ô¥À"; }
-		else if (entityId.equals("PIGZOMBIE")) { return "íL«Í½Þ¤H"; }
+		else if (entityId.equals("ZOMBIE_PIGMAN")) { return "íL«Í½Þ¤H"; }
 		else if (entityId.equals("ENDERMAN")) { return "²×¬É¨ÏªÌ"; }
-		else if (entityId.equals("CAVESPIDER")) { return "¬}¥Þ»jµï"; }
+		else if (entityId.equals("CAVE_SPIDER")) { return "¬}¥Þ»jµï"; }
 		else if (entityId.equals("SILVERFISH")) { return "¥ÛÀYÂÎ"; }
 		else if (entityId.equals("BLAZE")) { return "¯PµK¨ÏªÌ"; }
 		else if (entityId.equals("LAVASLIME")) { return "¯PµK¥vµÜ©i"; }

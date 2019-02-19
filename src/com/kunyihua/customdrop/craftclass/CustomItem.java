@@ -19,6 +19,7 @@ public class CustomItem
 	public List<String> ItemLores;
 	// 物品ID(原始ID)
 	public int ItemID;
+	public String ItemRealname;
 	// 顏色
 	public byte Red;
 	public byte Green;
@@ -38,6 +39,7 @@ public class CustomItem
 					   int newUseOriginalName,
 					   List<String> newItemLores,
 					   int newItemID,
+					   String newItemRealname,
 					   byte newRed,
 					   byte newGreen,
 					   byte newBlue,
@@ -52,6 +54,7 @@ public class CustomItem
 		this.UseOriginalName = newUseOriginalName;
 		this.ItemLores = newItemLores;
 		this.ItemID = newItemID;
+		this.ItemRealname = newItemRealname;
 		this.Red = newRed;
 		this.Green = newGreen;
 		this.Blue = newBlue;
@@ -71,10 +74,11 @@ public class CustomItem
 	    LeatherArmorMeta LeatherArmorMeta;
 		
 		// 合成後得到的物品設定
+	    
 		if (this.ItemSubID != 0)
-		{ ResultItem = new ItemStack(Material.getMaterial(this.ItemID), 1, this.ItemSubID); }
+		{ ResultItem = new ItemStack(Material.getMaterial(ItemRealname), 1, this.ItemSubID); }
 		else
-		{ ResultItem = new ItemStack(Material.getMaterial(this.ItemID)); }
+		{ ResultItem = new ItemStack(Material.getMaterial(ItemRealname)); }
 		// 判斷是否要設定顏色
 		if (this.ItemID == 298 || this.ItemID == 299|| this.ItemID == 300 || this.ItemID == 301)
 		{
