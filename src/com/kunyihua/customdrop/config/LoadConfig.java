@@ -204,7 +204,6 @@ public class LoadConfig
 		try
 		{
 			File createDir = new File(GlobalVar.pluginMainDir);
-	
 			if (!createDir.exists())
 			{
 				boolean dirCreated = false;
@@ -223,8 +222,11 @@ public class LoadConfig
 					return;
 				}
 			}
-
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(GlobalVar.pluginMainDir + "config.yml")));
+			FileOutputStream fos = new FileOutputStream(GlobalVar.pluginMainDir + "config.yml");
+		    fos.write(new byte[]{(byte)0xEF, (byte)0xBB, (byte)0xBF});
+		    OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
+		    
+			BufferedWriter out = new BufferedWriter(osw);
 			out.write("CustomDrop:\r\n");
 			out.write("#==========================#\r\n");
 			out.write("#生物實體ID                #\r\n");

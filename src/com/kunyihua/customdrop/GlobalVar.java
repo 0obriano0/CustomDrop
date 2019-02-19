@@ -53,7 +53,7 @@ public class GlobalVar
 		else if (entityId.equals("CAVE_SPIDER")) { return "¬}¥Þ»jµï"; }
 		else if (entityId.equals("SILVERFISH")) { return "¥ÛÀYÂÎ"; }
 		else if (entityId.equals("BLAZE")) { return "¯PµK¨ÏªÌ"; }
-		else if (entityId.equals("LAVASLIME")) { return "¯PµK¥vµÜ©i"; }
+		else if (entityId.equals("MAGMA_CUBE")) { return "¯PµK¥vµÜ©i"; }
 		else if (entityId.equals("ENDERDRAGON")) { return "²×¬ÉÀs"; }
 		else if (entityId.equals("WITHERBOSS")) { return "­ä¹s©Ç"; }
 		else if (entityId.equals("WITCH")) { return "§Å±C"; }
@@ -68,8 +68,18 @@ public class GlobalVar
 		else if (entityId.equals("SNOWMAN")) { return "³·¤H"; }
 		else if (entityId.equals("OZELOT")) { return "¿ß"; }
 		else if (entityId.equals("VILLAGERGOLEM")) { return "ÅK¤H"; }
-		else if (entityId.equals("ENTITYHORSE")) { return "°¨"; }
+		else if (entityId.equals("HORSE")) { return "°¨"; }
 		else if (entityId.equals("VILLAGER")) { return "§ø¥Á"; }
+		else if (entityId.equals("COD")) { return "÷«³½"; }
+		else if (entityId.equals("DOLPHIN")) { return "®ü³b"; }
+		else if (entityId.equals("DONKEY")) { return "Æj¤l"; }
+		else if (entityId.equals("DROWNED")) { return "¨I«Í"; }
+		else if (entityId.equals("ELDER_GUARDIAN")) { return "­ì¥j²`®ü¦u½Ã"; }
+		else if (entityId.equals("ENDERMITE")) { return "²×¬ÉÂÎ"; }
+		else if (entityId.equals("EVOKER")) { return "³êÅ]ªÌ"; }
+		else if (entityId.equals("GUARDIAN")) { return "²`®ü¦u½Ã"; }
+		else if (entityId.equals("HUSK")) { return "«Í´ß"; }
+		else if (entityId.equals("LLAMA")) { return "¦Ï¾m"; }
 		return entityId;
 	}
 }
