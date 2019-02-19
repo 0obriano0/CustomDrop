@@ -1,6 +1,8 @@
 name: CustomDrop
-main: com.kunyihua.customdrop.Main
-version: 1.0.4
+main: com.brian041301.customdrop.Main
+version: 2.0.0
+authors: [0obrino0 , kunyihua]
+website: www.youtube.com/user/brian041301
 api-version: 1.13
 commands:
    cdrop:
